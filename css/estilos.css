@@ -1,0 +1,465 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: "open Sans", arial, sans-serif;
+  font-size: 16px;
+}
+.contenedor{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*-----------HEADER----------*/
+header{
+  width: 100%;
+  background: url("../img/bg.jpg") #864317;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center 0;
+}
+
+header .contenedor{
+  position: relative;
+  height: 700px;
+}
+header .menu{
+  width: 100%;
+  text-align: right;
+
+}
+
+header .menu a{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 15px 0px 5px 20px;
+  position: relative;
+  /*padding: 10px 15px;*/
+
+}
+
+header .menu a:hover{
+ box-shadow: 0px  2px 0px #fff;
+}
+
+header  .texto{
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -52px;
+
+}
+header .texto .nombre{
+  font-size: 50px;
+  font-weight: 600;
+}
+header .texto .nombre span{
+  font-weight: 300;
+
+}
+
+header .texto h3{
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+
+}
+
+/*-------MAIN------*/
+.main{
+  background: url("../img/bg-textura.png");
+  background-repeat: repeat;
+}
+.main .acerca-de .contenedor{
+
+  overflow: visible;
+  position: relative;
+}
+.main .acerca-de .foto{
+  width: 80%;
+  position: absolute;
+  left: 0px;
+  top: -50px;
+  z-index: 0;
+
+}
+.main .acerca-de .foto img{
+  width: 100%;
+  vertical-align: top;
+  box-shadow:  0px 0px 15px rgba(0, 0, 0, .35);
+
+}
+
+.main .acerca-de article{
+  background: #fff;
+  padding: 40px;
+  width: 50%;
+  position: relative;
+  /*top: -150px; subir para el parallax*/
+  top: 500px;
+  float: right;
+  z-index: 1;
+  box-shadow:  0px 0px 15px rgba(0, 0, 0, .35);
+
+}
+
+.main .acerca-de article h3{
+  font-size: 50px;
+  font-weight: 300px;
+  margin-bottom: 40px;
+}
+.main .acerca-de article p{
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+/*-------Menu de platillo--------*/
+.main .menu{
+  padding-top: 550px;
+}
+
+.main .menu .titulo{
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.main .menu .contenedor-menu1{
+  border: 1px solid rgba(0, 0, 0, .9);
+  padding: 10px;
+}
+
+.main .menu .contenedor-menu2{
+  border: 1px solid rgba(0, 0, 0, .9);
+  padding: 5px;
+  overflow: hidden;
+}
+
+.main .menu article{
+  width:  50%;
+  float: left;
+  padding: 15px;
+  font-size: 18px;
+}
+.main .menu article .categoria{
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.main .menu article .platillo{
+  border-bottom: dotted;
+  margin-bottom: 30px;
+}
+.main .menu article .bebida{
+  border-bottom: dotted;
+  margin-bottom: 30px;
+}
+.main .menu article .nombre{
+float: left;
+margin-bottom:  10px;
+
+}
+
+.main .menu article .precio{
+  float: right;
+  margin-bottom: 10px;
+}
+
+.main .menu article .descripcion{
+  clear: both;
+  color: #6a696a;
+  margin-bottom: 15px;
+}
+
+/*--galeria--*/
+
+.main .galeria{
+  overflow: hidden;
+  margin: 50px 0px 0px 0px
+}
+
+.main .galeria .foto{
+  float: left;
+  width: 25%;
+}
+
+.main .galeria .foto img{
+  vertical-align: top;
+  opacity: .7;
+  width: 100%;
+
+}
+
+.main .galeria .foto img:hover{
+  opacity: 1;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.ubicacion{
+  background: #fff;
+  padding: 25px 0px 35px 0px;
+}
+.ubicacion h3{
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+}
+
+.ubicacion .direccion{
+  width: 50%;
+  float: left;
+}
+.ubicacion .direccion .calle{
+  margin-bottom: 10px;
+}
+.ubicacion .horario{
+  width: 50%;
+  float: left;
+}
+.ubicacion .horario .titulo{
+  text-align: center;
+}
+.ubicacion .horario .entre-semanas{
+  width: 50%;
+  float: left;
+}
+
+.ubicacion .horario .fin-semana{
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.mapa{
+  overflow: hidden;
+  width: 100%;
+}
+.mapa iframe{
+  width: 100%;
+  max-height: 600px;
+}
+
+/*--------footer---------*/
+footer{
+  background: rgb(26, 37, 41);
+  color: #fff;
+}
+
+footer .contenedor .contacto {
+  width: 50%;
+
+  margin: auto;
+
+}
+footer .contenedor .contacto h3{
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+footer .contenedor .contacto .formulario{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .contenedor .contacto .formulario .nombre, .telefono, .correo, .mensaje{
+  margin-bottom: 15px;
+  padding: 5px;
+}
+footer .contenedor .contacto .formulario .mensaje{
+  width: 100%;
+  height: 150px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+
+}
+
+footer .contenedor .formulario .btn-enviar{
+  width: 120px;
+  padding: 10px 20px;
+  margin: auto;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+footer .contenedor .redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .contenedor .redes .icons{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 10px 20px;
+
+}
+ footer .contenedor .redes .facebook{
+   background: #3f496f;
+   text-align: center;
+   line-height: 40px;
+ }
+
+ footer .contenedor .redes .youtube{
+   background: #7c3a3d;
+   text-align: center;
+   line-height: 40px;
+ }
+
+ footer .contenedor .redes .twitter{
+   background: #4c868e;
+   text-align: center;
+   line-height: 40px;
+ }
+
+ footer .contenedor .redes .facebook:hover{
+   background: rgb(48, 51, 135);
+ }
+
+ footer .contenedor .redes .youtube:hover{
+   background: rgb(221, 37, 59);
+ }
+
+ footer .contenedor .redes .twitter:hover{
+   background: rgb(10, 141, 182);
+ }
+
+
+footer .contenedor .redes .icons i{
+  color: #fff;
+}
+
+footer .texto-footer{
+  background: rgba(0, 0, 0, .5);
+}
+
+footer  .texto-footer .contenedor{
+  font-weight: 400;
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*---------Media quierys------------*/
+
+@media screen and (max-width:800px){
+  header .contenedor{
+    position: static;
+    height: auto;     /*nos ayudan a quitar el position relative de anterios o poner nuevas medidas*/
+  }
+
+  header .texto{
+    position: static;
+    margin: 100px 0px;
+  }
+
+  header .menu{
+    text-align: center;
+  }
+
+
+
+    header .texto .nombre{
+      font-size: 30px;
+    }
+
+    header .texto h3{
+      font-size: 18px;
+    }
+
+    .main .contenedor .foto{
+      width: 100%;
+      position: relative;
+    }
+    .main .acerca-de article{
+      position: relative;
+      width: 100%;
+      top: -50px;
+      transform: translate(0px, 0);
+
+    }
+
+    .main .acerca-de article h3{
+
+      font-size: 30px;
+    }
+
+    .main .menu{
+      padding-top: 0px;
+    }
+
+    .main .menu article{
+      width: 100%;
+    }
+
+    .main .galeria .foto{
+      width: 50%;
+    }
+
+    .main .mapa{
+      width: 80%;
+      margin: auto;
+    }
+
+    .ubicacion .horario .entre-semanas{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .ubicacion .horario .fin-semana{
+      width: 100%;
+      text-align: center;
+    }
+
+    footer .contenedor .contacto{
+      width: 70%;
+    }
+}
+
+@media screen and (max-width:425px){
+  .main .menu .titulo{
+    font-size: 30px;
+  }
+
+
+
+  .ubicacion .contenedor h3{
+    font-size:30px;
+  }
+
+    .ubicacion .contenedor  .direccion{
+      width: 100%;
+      text-align: center;
+    }
+
+  .ubicacion .contenedor  .horario{
+    width: 100%;
+    text-align: center;
+  }
+   .menu article .nombre{
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .main .menu article .precio{
+   font-size: 15px;
+   line-height: 15px;
+ }
+
+ footer .contenedor .contacto{
+   width: 90%;
+ }
+
+}
